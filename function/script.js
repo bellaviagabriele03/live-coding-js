@@ -40,27 +40,55 @@
 
 
 
-function raddoppia(number) {
-    let numberBang = [];
-    for (let i = 0; i < number.length; i++) {
-        let curNumber = number[i];
-        numberBang.push(curNumber + curNumber)
+// function raddoppia(number) {
+//     let numberBang = [];
+//     for (let i = 0; i < number.length; i++) {
+//         let curNumber = number[i];
+//         numberBang.push(curNumber + curNumber)
 
+//     }
+//     return numberBang;
+// }
+
+
+
+
+
+// const valori = [1, 3, 5, 10];
+
+// let result = raddoppia(valori);
+// console.log(result);
+
+
+
+
+
+//EX 3
+
+
+// Scrivi una funzione concatena(array, simbolo) che unisce in un’unica stringa tutte le parole mettendo il simbolo tra di loro.
+
+// const parole = ["ape", "miele", "olio", "uovo", "pane", "sole"];
+// console.log(concatena(parole, "-")); //
+
+
+function concatena(word, simbolo) {
+    let newWord = [];
+    for (let i = 0; i < word.length; i++) {
+        let curWord = "";
+        curWord = word[i] + simbolo;
+        newWord.push(curWord);
     }
-    return numberBang;
+    return newWord;
 }
 
 
 
 
 
-const valori = [1, 3, 5, 10];
 
-let result = raddoppia(valori);
+
+
+const parole = ["ape", "miele", "olio", "uovo", "pane", "sole"];
+let result = concatena(parole, "-");
 console.log(result);
-
-
-
-
-
-
